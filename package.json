@@ -1,0 +1,44 @@
+{
+  "name": "create-next-app-cli",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "export": "next export",
+    "deploy": "npm run build && npm run export"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@burner-wallet/burner-connect-provider": "^0.1.1",
+    "@myetherwallet/mewconnect-web-client": "^2.1.0-RC.5.9",
+    "@rimble/network-indicator": "^1.2.3",
+    "@unilogin/provider": "^0.6.1",
+    "@walletconnect/web3-provider": "^1.0.5",
+    "authereum": "^0.0.4-beta.157",
+    "axios": "^0.19.2",
+    "easy-peasy": "^3.3.1",
+    "fortmatic": "^2.0.6",
+    "next": "^9.4.2",
+    "next-compose-plugins": "^2.2.0",
+    "next-images": "^1.4.0",
+    "nprogress": "^0.2.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-hook-form": "^5.7.2",
+    "react-js-pagination": "^3.0.3",
+    "rimble-ui": "^0.14.0",
+    "styled-components": "^5.1.1",
+    "uuid": "^8.1.0",
+    "web3": "^1.2.9",
+    "web3modal": "^1.7.0",
+    "yup": "^0.29.1"
+  },
+  "devDependencies": {
+    "babel-plugin-styled-components": "^1.10.7"
+  }
+}
