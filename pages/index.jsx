@@ -15,8 +15,8 @@ const Home = () => {
   return (
     <MainLayout>
       <Head>
-        <title>My page title</title>
-        <meta property="og:title" content="My page title" key="title" />
+        <title>PIXBY - Decentralized app</title>
+        <meta property="og:title" content="PIXBY - Decentralized app" key="title" />
       </Head>
       <HeroArea />
       <StakingArea />
