@@ -8,10 +8,16 @@ import Call2ActionArea from "../views/Home/Call2ActionArea/Call2ActionArea";
 import StakingHistoryArea from "../views/Home/StakingHistoryArea/StakingHistoryArea";
 import WalletIcons from "../views/Home/AppsArea/WalletIcons";
 import ExchangeIcons from "../views/Home/AppsArea/ExchangeIcons";
+import Head from "next/head";
+
 
 const Home = () => {
   return (
     <MainLayout>
+      <Head>
+        <title>My page title</title>
+        <meta property="og:title" content="My page title" key="title" />
+      </Head>
       <HeroArea />
       <StakingArea />
       <WhyUsArea />
