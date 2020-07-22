@@ -73,7 +73,7 @@ const HistoryTable = ({ history, type }) => {
                 <td>
                   <a
                     target="blank"
-                    href={`https://ropsten.etherscan.io/tx/${transactionHash}`}
+                    href={`https://etherscan.io/tx/${transactionHash}`}
                   >
                     {stringShortener(transactionHash)}
                   </a>
