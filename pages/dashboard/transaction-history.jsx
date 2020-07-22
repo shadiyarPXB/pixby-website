@@ -7,6 +7,7 @@ import DashboardLayout from "../../layouts/DashboardLayout/DashboardLayout";
 import HistoryLayout from "../../components/DashboardCard/HistoryLayout";
 import HistoryTable from "../../components/HistoryTable/HistoryTable";
 import Loader from "../../components/Loader/Loader";
+import Head from "next/head";
 
 // Tab menu style
 const TabMenu = styled.ul`
@@ -96,6 +97,9 @@ const transactionHistory = () => {
 
   return (
     <DashboardLayout>
+      <Head>
+        <title>Transaction History</title>
+      </Head>
       <Box
         backgroundColor="#f5f5f5"
         boxShadow="6px 6px 12px #0c0c0c, 

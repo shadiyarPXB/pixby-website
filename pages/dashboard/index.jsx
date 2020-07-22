@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import dynamic from "next/dynamic";
 import Link from "next/link";
 import Web3 from "web3";
+import Head from "next/head";
 import {
   Heading,
   Text,
@@ -116,6 +117,9 @@ const Dashboard = () => {
 
   return (
     <DashboardLayout>
+      <Head>
+        <title>PIXBY Dashboard</title>
+      </Head>
       <Row>
         <Column width={[1, 1, 1, 3 / 5]}>
           <DashboardCard>

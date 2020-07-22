@@ -4,6 +4,7 @@ import { useRouter } from "next/router";
 import Link from "next/link";
 import Web3 from "web3";
 import { useForm } from "react-hook-form";
+import Head from "next/head";
 import {
   Flex,
   Box,
@@ -221,6 +222,9 @@ const Staking = () => {
   }, [accountId]);
   return (
     <StakingWrapper as="section">
+      <Head>
+        <title>Make Passive Investment</title>
+      </Head>
       <Flex
         width={[1, 1, 1, 1 / 2]}
         justifyContent="center"
