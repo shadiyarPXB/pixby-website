@@ -103,7 +103,7 @@ const HistoryTable = ({ history, type }) => {
       <HistoryTableWrapper>
         <thead>
           <tr>
-            <th style={{ color: "#a6a6a6", fontWeight: 300 }}>Block Number</th>
+            <th>Block Number</th>
             <th>Txn</th>
             <th>Value</th>
           </tr>
@@ -112,7 +112,7 @@ const HistoryTable = ({ history, type }) => {
           {history.map(
             ({ blockNumber, transactionHash, returnValues }, index) => (
               <tr key={transactionHash}>
-                <td>{blockNumber}</td>
+                <td style={{ color: "#a6a6a6", fontWeight: 300 }}>{blockNumber}</td>
                 <td>
                   <a
                     target="blank"
@@ -137,7 +137,7 @@ const HistoryTable = ({ history, type }) => {
       <HistoryTableWrapper>
         <thead>
           <tr>
-            <th style={{ color: "#a6a6a6", fontWeight: 300 }}>Block Number</th>
+            <th>Block Number</th>
             <th>Txn</th>
             <th>From</th>
             <th>To</th>
@@ -148,7 +148,7 @@ const HistoryTable = ({ history, type }) => {
           {history.map(
             ({ blockNumber, transactionHash, returnValues }, index) => (
               <tr key={transactionHash}>
-                <td>{blockNumber}</td>
+                <td style={{ color: "#a6a6a6", fontWeight: 300 }}>{blockNumber}</td>
                 <td>
                   <a
                     target="blank"
@@ -175,7 +175,7 @@ const HistoryTable = ({ history, type }) => {
       <HistoryTableWrapper>
         <thead>
           <tr>
-            <th style={{ color: "#a6a6a6", fontWeight: 300 }}>Block Number</th>
+            <th>Block Number</th>
             <th>Txn</th>
             <th>From</th>
             <th>To</th>
@@ -186,7 +186,7 @@ const HistoryTable = ({ history, type }) => {
           {history.map(
             ({ blockNumber, transactionHash, returnValues }, index) => (
               <tr key={transactionHash}>
-                <td>{blockNumber}</td>
+                <td style={{ color: "#a6a6a6", fontWeight: 300 }}>{blockNumber}</td>
                 <td>
                   <a
                     target="blank"

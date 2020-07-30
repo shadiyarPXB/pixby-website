@@ -80,7 +80,7 @@ const ClaimButton = ({ staking }) => {
 
       releasePassiveIncomeHandler();
     } catch (error) {
-      toast.error("Oops something goes wrong....");
+      toast.error("Investment is already claimed!");
     }
   };
 
@@ -90,7 +90,7 @@ const ClaimButton = ({ staking }) => {
       const result = await getSimulatedDailyIncome(staking?.returnValues?._ID2);
 
       if (!result._spent) {
-        toast.error("Tokens did not mature.");
+        toast.error("Tokens did not mature!");
         return;
       }
       await getTransactionSummaryDetails();

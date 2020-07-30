@@ -22,12 +22,6 @@ const providerOptions = {
       key: "pk_live_BA9B27A642DF53EF",
     },
   },
-  burnerconnect: {
-    package: BurnerConnectProvider,
-    options: {
-      defaultNetwork: "100",
-    },
-  },
   unilogin: {
     package: UniLogin,
   },
@@ -44,7 +38,8 @@ const providerOptions = {
 
 const web3Modal = new Web3Modal({
   network: "mainnet",
-  cacheProvider: true,
+  cacheProvider: false,
+  disableInjectedProvider: false,
   providerOptions,
   theme: {
     background: "#fff",
@@ -155,7 +150,6 @@ export const onDisconnect = async (router) => {
     // and does not allow to re-scan the QR code with a new wallet.
     // Depending on your use case you may want or want not his behavir.
     await web3Modal.clearCachedProvider();
-    provider = null;
   }
 
   selectedAccount = null;
