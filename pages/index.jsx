@@ -15,7 +15,7 @@ const Home = () => {
   return (
     <MainLayout>
       <Head>
-        <title>PIXBY - A token that rewards users for holding!</title>
+        <title>PIXBY - The most powerful staking protocol!</title>
       </Head>
       <HeroArea />
       <StakingArea />
