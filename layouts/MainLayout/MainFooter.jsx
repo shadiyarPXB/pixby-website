@@ -120,7 +120,7 @@ const MainFooter = forwardRef((props, ref) => {
             <Column width={[1, 1, 1 / 2]}>
               <Links>
                 <a href="https://www.coingecko.com/en/coins/pixby">Coingecko</a>
-                <a href="https://github.com/PIXBY-Project/Assets/blob/master/Whitepaper/whitepaper.pdf</a>
+                <a href="https://github.com/PIXBY-Project/Assets/blob/master/Whitepaper/whitepaper.pdf"</a>
                 <a href="https://t.me/pixbytoken">Telegram</a>
               </Links>
             </Column>
