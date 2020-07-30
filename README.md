@@ -13,7 +13,7 @@ We are happy to announce a new secure, easy-to-use platform for PIXBY token hold
 - Clean, Simple user interface
 
 ## Screenshots
-![alt text](https://github.com/PIXBY-Project/screenshots/blob/master/app.gif?raw=true)
+![PIXBY APP SCREENSHOT](https://github.com/PIXBY-Project/Assets/blob/master/screenshots_App.gif?raw=true)
 
 
 ### Todos
