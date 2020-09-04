@@ -158,4 +158,4 @@ export const onDisconnect = async (router) => {
   store.getActions().account.removeAccount();
   router.push("/");
   toast.success("Successfully logged Out");
-};
+}
