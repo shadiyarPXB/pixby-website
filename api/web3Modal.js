@@ -9,6 +9,7 @@ import toast from "../utils/toast";
 import BurnerConnectProvider from "@burner-wallet/burner-connect-provider";
 import MewConnect from "@myetherwallet/mewconnect-web-client";
 
+
 const providerOptions = {
   walletconnect: {
     package: WalletConnectProvider,
@@ -39,7 +40,7 @@ const providerOptions = {
 const web3Modal = new Web3Modal({
   network: "mainnet",
   cacheProvider: false,
-  disableInjectedProvider: false,
+  disableInjectedProvider: true,
   providerOptions,
   theme: {
     background: "#fff",
@@ -54,7 +55,7 @@ let provider, selectedAccount;
 
 export const onConnect = async (router) => {
   try {
-    provider = await web3Modal.connect();
+    provider = await web3Modal.connectTo("injected");
   } catch (e) {
     if (!(e === "Modal closed by user")) {
       toast.error("Something went wrong. Please try again...", 10000);
