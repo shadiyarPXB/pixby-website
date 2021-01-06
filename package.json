@@ -20,7 +20,7 @@
     "@unilogin/provider": "^0.6.1",
     "@walletconnect/web3-provider": "^1.0.5",
     "authereum": "^0.0.4-beta.157",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "easy-peasy": "^3.3.1",
     "fortmatic": "^2.0.6",
     "next": "^9.4.2",
